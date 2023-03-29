@@ -1,0 +1,4 @@
+n = int(input('Digite um numero: '))
+print(n)
+r = n ** (1/2)
+print('A raiz quadrada de {} é {}'.format(n, r))
