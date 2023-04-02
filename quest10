@@ -1,0 +1,7 @@
+valores = list()
+for v in range(0,10):
+    valores.append(float(input('Digite um número: ')))
+media = v / 2
+
+print('Os valores digitados foram {}'.format(valores))
+print('A média dos valores informados foi {}'.format(media))
