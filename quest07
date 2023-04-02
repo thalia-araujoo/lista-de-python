@@ -1,0 +1,15 @@
+frase = str(input('Digite uma frase: ')).split()
+tam_palavra = list()
+#for para percorrer a frase e ver o tamanho delas
+for palavra in frase:
+    tam_palavra.append(len(palavra)) #aq ele ver o tamanho das palavras
+
+#É necessario ter um segundo for com a função zip para ambas 
+#as listas frase, e tam_palavra serem percorridas.
+
+#aq em baixo ele ler o tamanho da frase digitada
+maior = max(tam_palavra)
+print('Maior(es) palavra(s): ')
+for a, b in zip(frase,tam_palavra):
+    if b == maior:
+        print(a)
