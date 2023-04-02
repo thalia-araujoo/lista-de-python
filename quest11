@@ -1,0 +1,9 @@
+valores = list()
+for n in range (0,10):
+    n = (int(input('Informe um número qualquer: ')))
+    valores.append(n)
+    resultado = n % 2
+    if resultado == 0:
+        print('Número PAR digitado {}'.format(n))
+
+
