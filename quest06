@@ -1,9 +1,12 @@
 
 #criando uma lista
 numeros = []
-#criando um laço for para informa os numeros contando de 1 a 10
-for n in range(0,10):
+#criando um laço while para informa os numeros informados
+res = 's'
+while res == 's':
+    
     n = int(input('Informe um numero: '))
-    numeros.append(n) #função q add os numeros dentro da lista
+    numeros.append(n)#função q add os numeros dentro da lista
+    res = str(input('Quer continuar? [s/n] '))
 print(sum(numeros)) #função sum, soma os numeros da lista
 
