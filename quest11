@@ -1,15 +1,27 @@
-numeros = list()
-pares = 0
+#função que retorna somente os numeros pares de uma lista
+def separar_pares(lista):
+    lista_pares = list([])
+    for i in range(len(lista)):
+        if((lista[i] % 2) == 0):
+            lista_pares.append(lista[i])
+    
+    return lista_pares
+
+
+# =============================================================================
+# Bloco principal
+# =============================================================================
+lista1 = list()
+pares =list()
 res = 's'
+
 while res == 's':
-
-    inteiro = int(input("Insira um número inteiro:"))
-    numeros.append(inteiro)
+    n = int(input('Digite um numero: '))
+    lista1.append(n)
     res = str(input('Quer continuar? [s/n] '))
-    if inteiro % 2 == 0:
-        pares = pares + 1
-
-print("A quantidade de números pares é: {} ".format(pares))  
+    
+lista_pares = separar_pares(lista1)
+print(lista_pares) 
 
 
 
