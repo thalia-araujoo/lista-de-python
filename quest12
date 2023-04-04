@@ -1,15 +1,27 @@
-numeros = list()
-impares = 0
-res = 's'
-while res == 's':
+#função que retorna somente os numeros impares de uma lista
+def separar_impares(lista):
+    lista_impares = list([])
+    for i in range(len(lista)):
+        if((lista[i] % 2) != 0):
+            lista_impares.append(lista[i])
     
-    inteiro = int(input("Insira um número inteiro:"))
-    numeros.append(inteiro)
-    res = str(input('Quer continuar? [s/n] '))
-    if inteiro % 2 != 0:
-        impares = impares + 1
+    return lista_impares
 
-print("A quantidade de números impares é: {} ".format(impares))  
+
+# =============================================================================
+# Bloco principal
+# =============================================================================
+lista1 = list()
+impares =list()
+res = 's'
+
+while res == 's':
+    n = int(input('Digite um numero: '))
+    lista1.append(n)
+    res = str(input('Quer continuar? [s/n] '))
+    
+lista_impares = separar_impares(lista1)
+print(lista_impares) 
 
 
 
