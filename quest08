@@ -1,7 +1,9 @@
 #criando uma lista com o nome valores
 valores = list()
-#laço for para add os valores pelo usuario na lista
-for v in range(0,20):
+#laço while para add os valores pelo usuario na lista
+res = 's'
+while res == 's':
     valores.append(int(input('Digite um numero: ')))
+    res = str(input('Quer continuar? [s/n] '))
 print('O maior valor digitado foi {}'.format(max(valores)))
     
