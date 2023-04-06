@@ -1,0 +1,12 @@
+valores = list()
+maior = 10
+res = 's'
+while res == 's':
+    v = int(input('Digite um valor: '))
+    valores.append(v)
+    res = str(input('Quer continuar? [s/n] '))
+for v in valores:
+    if v > maior:
+        print('Os números maiores q 10 foram {}'.format(v))
+   
+print('Fim!')
