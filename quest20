@@ -1,0 +1,10 @@
+#criando uma lista com o nome valores
+valores = list()
+
+res = 's'
+while res == 's':
+    valores.append(int(input('Digite um numero: ')))
+    res = str(input('Quer continuar? [s/n] '))
+valores.sort(reverse=True)
+print('Valores em ordem decrescente {}'.format(valores))
+    
