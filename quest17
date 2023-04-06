@@ -1,0 +1,18 @@
+numeros = list()
+soma = 0
+res = 's'
+while res == 's':
+
+    n = int(input("Insira um número inteiro:"))
+    numeros.append(n)
+    res = str(input('Quer continuar? [s/n] '))
+    if n % 2 != 0:
+        
+        soma = soma + n 
+
+print("A soma entre os números impares é: {} ".format(soma))  
+
+
+
+
+
