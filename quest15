@@ -1,0 +1,12 @@
+valores = list()
+menor = 5
+res = 's'
+while res == 's':
+    v = int(input('Digite um valor: '))
+    valores.append(v)
+    res = str(input('Quer continuar? [s/n] '))
+for v in valores:
+    if v < menor:
+        print('Os números menores q 5 foram {}'.format(v))
+   
+print('Fim!')
